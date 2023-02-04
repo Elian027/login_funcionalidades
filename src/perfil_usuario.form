@@ -42,7 +42,7 @@
         </constraints>
         <properties>
           <font name="Arial Rounded MT Bold" size="12" style="0"/>
-          <text value="Tecnologia superior en desarrollo de software"/>
+          <text value="Estudiante de la Escuela Politecnica Nacional"/>
         </properties>
       </component>
       <component id="f804b" class="javax.swing.JLabel">
