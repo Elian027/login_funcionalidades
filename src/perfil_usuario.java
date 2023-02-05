@@ -54,7 +54,7 @@ public class perfil_usuario extends JFrame {
 
     public void setFoto(String Foto) {
         this.Foto = Foto;
-        Icon image = new ImageIcon(new ImageIcon(getClass().getClassLoader().getResource(Foto)).getImage().getScaledInstance(90, 120, 0));
+        Icon image = new ImageIcon(new ImageIcon(getClass().getClassLoader().getResource(Foto)).getImage().getScaledInstance(100, 100, 0));
         Jlabelfoto.setIcon(image);
     }
 
