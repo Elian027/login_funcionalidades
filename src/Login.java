@@ -23,12 +23,12 @@ public class Login extends JFrame{
                 }else {
                     if (usuario.equals("Elian Moreira") && contraseña.equals("Elian123")) {
 
-                        JFrame frame2 = new JFrame("Perfil 1"); //Creaccion de un objeto que nos ayudara a utilizar las instancias del formulario 2
+                        JFrame frame2 = new JFrame("Perfil 1"); //Creacion de un objeto que nos ayudara a utilizar las instancias del formulario 2
                         perfil_usuario p1 = new perfil_usuario();
 
                         p1.setDato(usu.getText());
-                        p1.setDato1("Elian -- Moreira ---");
-                        p1.setFoto("imagenes/foto2.jpg");
+                        p1.setDato1("Elian Ariel Moreira Baque");
+                        p1.setFoto("imagenes/img2.jpeg");
                         frame2.setSize(800, 800);
                         frame2.setContentPane(p1.perfil1);
                         frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -38,7 +38,7 @@ public class Login extends JFrame{
                         dispose();
 
                     } else if (usuario.equals("Jose Panchi") && contraseña.equals("Jose123")) {
-                        JFrame frame2 = new JFrame("Perfil 2"); //Creaccion de un objeto que nos ayudara a utilizar las instancias del formulario 2
+                        JFrame frame2 = new JFrame("Perfil 2"); //Creacion de un objeto que nos ayudara a utilizar las instancias del formulario 2
                         perfil_usuario p2 = new perfil_usuario();
 
                         p2.setDato(usu.getText());

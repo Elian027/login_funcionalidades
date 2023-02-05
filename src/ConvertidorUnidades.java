@@ -18,7 +18,7 @@ public class ConvertidorUnidades {
     private JComboBox comboBox3;
 
 
-    public ConversorDivisas() {
+    public ConvertidorUnidades() {
         convertirButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
