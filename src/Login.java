@@ -17,7 +17,6 @@ public class Login extends JFrame{
                 String usuario = usu. getText();
                 String contraseña = pass.getText();
 
-
                 if (usuario.isEmpty() || contraseña.isEmpty()) {
                     JOptionPane.showMessageDialog(null, "Complete todos los campos");
                 }else {
