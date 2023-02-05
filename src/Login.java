@@ -50,7 +50,7 @@ public class Login extends JFrame{
                         frame2.setVisible(true);
                         dispose();
                     } else {
-                        JOptionPane.showMessageDialog(null, "Su usuario o contraseña es incorrecto");
+                        JOptionPane.showMessageDialog(null, "Error al inciar sesión, usuario o contraseña incorrectos");
                     }
                 }
             }
