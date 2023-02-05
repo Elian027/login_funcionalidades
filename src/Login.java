@@ -3,14 +3,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Login extends JFrame{
-
-
     private JPanel login;
     private JTextField usu;
     private JPasswordField pass;
     private JButton ingresarButton;
-
-
+    TextPrompt tp = new TextPrompt("Usuario",usu);
+    TextPrompt tp1 = new TextPrompt("Contraseña",pass);
 
     public  Login() {
         ingresarButton.addActionListener(new ActionListener() {
@@ -54,7 +52,7 @@ public class Login extends JFrame{
                         frame2.setVisible(true);
                         dispose();
                     } else {
-                        JOptionPane.showMessageDialog(null, "Su usuario o contraseña es incorrecto");
+                        JOptionPane.showMessageDialog(null, "Error al inciar sesión, usuario o contraseña incorrectos");
                     }
                 }
             }
@@ -63,7 +61,7 @@ public class Login extends JFrame{
     }
 
     public static void main(String[] arg) {
-        JFrame frame1 = new JFrame("Inicia sesión");
+        JFrame frame1 = new JFrame("Login");
         Login f1 = new Login();
 
         frame1.setContentPane(f1.login);
@@ -71,6 +69,7 @@ public class Login extends JFrame{
         frame1.pack();
         frame1.setSize(400, 350);
         frame1.setLocationRelativeTo(null);
+        frame1.setResizable(false);
         frame1.setVisible(true);
     }
 }
