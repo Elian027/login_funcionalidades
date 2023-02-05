@@ -8,8 +8,11 @@ public class perfil_usuario extends JFrame {
     private JButton calculadoraIMCButton;
     public JLabel UsuarioIng;
     public JLabel Jlabel_Nombre;
-    private JLabel Jlabelfoto;
+    public JLabel Jlabelfoto;
+    public JLabel Foto;
+
     private String Dato;
+    private  String Dato1;
 
     public perfil_usuario() {
         calculadoraIMCButton.addActionListener(new ActionListener() {
@@ -42,6 +45,11 @@ public class perfil_usuario extends JFrame {
     public void setDato(String Dato){
         this.Dato = Dato;
         UsuarioIng.setText(Dato);
+    }
+
+    public void setDato1(String Dato1){
+        this.Dato = Dato1;
+        Jlabel_Nombre.setText(Dato1);
     }
 
 }
