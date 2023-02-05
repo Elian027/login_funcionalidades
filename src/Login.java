@@ -43,7 +43,7 @@ public class Login extends JFrame{
 
                         p2.setDato(usu.getText());
                         p2.setDato1("Jose Rafael Panchi Melo");
-                        p2.setFoto("imagenes/Imagen3.png");
+                        p2.setFoto("imagenes/Imagen3.png" );
                         frame2.setSize(800, 800);
                         frame2.setContentPane(p2.perfil1);
                         frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
