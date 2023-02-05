@@ -30,6 +30,7 @@ public class Login extends JFrame{
 
                         p1.setDato(usu.getText());
                         p1.setDato1("Elian -- Moreira ---");
+                        p1.setFoto("imagenes/foto2.jpg");
                         frame2.setSize(500, 500);
                         frame2.setContentPane(p1.perfil1);
                         frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -44,6 +45,7 @@ public class Login extends JFrame{
 
                         p2.setDato(usu.getText());
                         p2.setDato1("Jose Rafael Panchi Melo");
+                        p2.setFoto("imagenes/foto1.jpg");
                         frame2.setSize(500, 500);
                         frame2.setContentPane(p2.perfil1);
                         frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

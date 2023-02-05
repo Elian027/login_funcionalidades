@@ -9,7 +9,7 @@ public class perfil_usuario extends JFrame {
     public JLabel UsuarioIng;
     public JLabel Jlabel_Nombre;
     public JLabel Jlabelfoto;
-    public JLabel Foto;
+    private String Foto;
 
     private String Dato;
     private  String Dato1;
@@ -50,6 +50,12 @@ public class perfil_usuario extends JFrame {
     public void setDato1(String Dato1){
         this.Dato = Dato1;
         Jlabel_Nombre.setText(Dato1);
+    }
+
+    public void setFoto(String Foto) {
+        this.Foto = Foto;
+        Icon image = new ImageIcon(new ImageIcon(getClass().getClassLoader().getResource(Foto)).getImage().getScaledInstance(90, 120, 0));
+        Jlabelfoto.setIcon(image);
     }
 
 }
