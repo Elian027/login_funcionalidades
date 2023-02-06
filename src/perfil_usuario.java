@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 public class perfil_usuario extends JFrame {
     public JPanel perfil1;
     private JButton calculadoraDeDivisasButton;
-    private JButton calculadoraIMCButton;
+    private JButton conversor_Unid_Button;
     public JLabel UsuarioIng;
     public JLabel Jlabel_Nombre;
     public JLabel Jlabelfoto;
@@ -15,7 +15,7 @@ public class perfil_usuario extends JFrame {
     private  String Dato1;
 
     public perfil_usuario() {
-        calculadoraIMCButton.addActionListener(new ActionListener() {
+        conversor_Unid_Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFrame frame1 = new JFrame("Calculadora IMC");

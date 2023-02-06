@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="divisasPanel" layout-manager="GridLayoutManager" row-count="13" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="504" height="400"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -39,9 +39,11 @@
         </constraints>
         <properties>
           <model>
-            <item value="USD"/>
-            <item value="EUR"/>
-            <item value="JPY"/>
+            <item value="USD (Dolares EstadoUnidenses)"/>
+            <item value="EUR (Euro)"/>
+            <item value="JPY (Yen Japones)"/>
+            <item value="MXN (Pesos Mexicanos)"/>
+            <item value="GBP (Libra Esterlina)"/>
           </model>
         </properties>
       </component>
@@ -123,9 +125,11 @@
         </constraints>
         <properties>
           <model>
-            <item value="JPY"/>
-            <item value="USD"/>
-            <item value="EUR"/>
+            <item value="USD (Dolares EstadoUnidenses)"/>
+            <item value="EUR (Euro)"/>
+            <item value="JPY (Yen Japones)"/>
+            <item value="MXN (Pesos Mexicanos)"/>
+            <item value="GBP (Libra Esterlina)"/>
           </model>
         </properties>
       </component>
