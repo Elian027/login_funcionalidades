@@ -6,19 +6,18 @@ public class Login extends JFrame{
 
 
     private JPanel login;
-    private JTextField usu;
-    private JPasswordField pass;
+    private JTextField textField1;
+    private JPasswordField passwordField1;
     private JButton ingresarButton;
-    TextPrompt tp = new TextPrompt("Usuario",usu);
-    TextPrompt tp1 = new TextPrompt("Contraseña",pass);
+    private JButton salirButton;
 
 
     public  Login() {
         ingresarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String usuario = usu. getText();
-                String contraseña = pass.getText();
+                String usuario = textField1. getText();
+                String contraseña = passwordField1.getText();
 
 
                 if (usuario.isEmpty() || contraseña.isEmpty()) {
@@ -29,11 +28,9 @@ public class Login extends JFrame{
                         JFrame frame2 = new JFrame("Perfil 1"); //Creaccion de un objeto que nos ayudara a utilizar las instancias del formulario 2
                         perfil_usuario p1 = new perfil_usuario();
 
-                        p1.setDato(usu.getText());
-                        p1.setDato1("Elian Ariel Moreira Baque");
-                        p1.setDato2("202116212");
-                        p1.setFoto("imagenes/img2.jpeg");
-                        frame2.setSize(1000, 1000);
+                        p1.setDato(textField1.getText());
+
+                        frame2.setSize(200, 200);
                         frame2.setContentPane(p1.perfil1);
                         frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                         frame2.pack();
@@ -45,11 +42,9 @@ public class Login extends JFrame{
                         JFrame frame2 = new JFrame("Perfil 2"); //Creaccion de un objeto que nos ayudara a utilizar las instancias del formulario 2
                         perfil_usuario p2 = new perfil_usuario();
 
-                        p2.setDato(usu.getText());
-                        p2.setDato1("Jose Rafael Panchi Melo");
-                        p2.setDato2("202016532");
-                        p2.setFoto("imagenes/Imagen3.png" );
-                        frame2.setSize(1000, 1000);
+                        p2.setDato(textField1.getText());
+
+                        frame2.setSize(500, 500);
                         frame2.setContentPane(p2.perfil1);
                         frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                         frame2.pack();
@@ -62,17 +57,22 @@ public class Login extends JFrame{
                 }
             }
         });
-
+        salirButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
     }
 
     public static void main(String[] arg) {
-        JFrame frame1 = new JFrame("Login");
+        JFrame frame1 = new JFrame("Inicia sesión");
         Login f1 = new Login();
 
         frame1.setContentPane(f1.login);
         frame1.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         frame1.pack();
-        frame1.setSize(350, 350);
+        frame1.setSize(400, 400);
         frame1.setLocationRelativeTo(null);
         frame1.setVisible(true);
     }
