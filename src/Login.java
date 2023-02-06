@@ -10,7 +10,6 @@ public class Login extends JFrame{
     private JPasswordField pass;
     private JRadioButton ingresarButton;
     private JSeparator JSeparato1;
-    private JToolBar JtoolBar1;
     TextPrompt tp = new TextPrompt("Usuario",usu);
     TextPrompt tp1 = new TextPrompt("Contraseña",pass);
 
@@ -20,20 +19,20 @@ public class Login extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 String usuario = usu. getText();
-                String contraseña = pass.getText();
+                String passw = pass.getText();
 
 
-                if (usuario.isEmpty() || contraseña.isEmpty()) {
+                if (usuario.isEmpty() || passw.isEmpty()) {
                     JOptionPane.showMessageDialog(null, "Complete todos los campos");
                 }else {
-                    if (usuario.equals("Elian Moreira") && contraseña.equals("Elian123")) {
+                    if (usuario.equals("Elian Moreira") && passw.equals("Elian123")) {
 
-                        JFrame frame2 = new JFrame("Perfil 1"); //Creaccion de un objeto que nos ayudara a utilizar las instancias del formulario 2
+                        JFrame frame2 = new JFrame("Perfil 1"); //Creacion de un objeto que nos ayudara a utilizar las instancias del formulario 2
                         perfil_usuario p1 = new perfil_usuario();
 
                         p1.setDato(usu.getText());
                         p1.setDato1("Elian Ariel Moreira Baque");
-                        p1.setDato2("202116212");
+                        p1.setDato2("202020188");
                         p1.setFoto("imagenes/img2.jpeg");
                         frame2.setSize(1000, 1000);
                         frame2.setContentPane(p1.perfil1);
@@ -43,8 +42,8 @@ public class Login extends JFrame{
                         frame2.setVisible(true);
                         dispose();
 
-                    } else if (usuario.equals("Jose Panchi") && contraseña.equals("Jose123")) {
-                        JFrame frame2 = new JFrame("Perfil 2"); //Creaccion de un objeto que nos ayudara a utilizar las instancias del formulario 2
+                    } else if (usuario.equals("Jose Panchi") && passw.equals("Jose123")) {
+                        JFrame frame2 = new JFrame("Perfil 2"); //Creacion de un objeto que nos ayudara a utilizar las instancias del formulario 2
                         perfil_usuario p2 = new perfil_usuario();
 
                         p2.setDato(usu.getText());

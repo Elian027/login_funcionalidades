@@ -4,17 +4,11 @@ import java.awt.event.ActionListener;
 
 public class ConversorDivisas {
     public JPanel divisasPanel;
-    private JMenu archivo;
-    private JMenuItem guardar;
-    private JMenuItem cerrar;
-    private JMenu editar;
-    private JMenuItem obscuro;
     private JTextField txt_dato;
     private JComboBox comboBox1;
     private JComboBox comboBox2;
     private JButton convertirButton;
     private JLabel resultado;
-    private JCheckBox checkBox1;
 
 
     public ConversorDivisas() {

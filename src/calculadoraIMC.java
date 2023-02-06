@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
 
 public class calculadoraIMC extends JFrame{
     private JLabel peso;
@@ -9,15 +10,11 @@ public class calculadoraIMC extends JFrame{
     private JButton calcularButton;
     private JLabel Altura;
     private JTextField textField1;
-    private JMenu archivo;
-    private JMenuItem guardar;
-    private JMenuItem cerrar;
-    private JMenu editar;
-    private JMenuItem obscuro;
     private JLabel r1;
 
 
     public calculadoraIMC() {
+        DecimalFormat dfr = new DecimalFormat("#.00");
         calcularButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -25,9 +22,9 @@ public class calculadoraIMC extends JFrame{
                 double p = Double.parseDouble(peso1);
                 double h = Double.parseDouble(altura);
                 double respuesta = p/(h*h);
-                JOptionPane.showMessageDialog(null,"Su IMC es: "+respuesta);
+                JOptionPane.showMessageDialog(null,"Su IMC es: "+dfr.format(respuesta));
             }
         });
     }
-/*dasdas*/
+
 }
