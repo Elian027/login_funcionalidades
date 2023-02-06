@@ -32,19 +32,7 @@ public class perfil_usuario extends JFrame{
                 frame1.setVisible(true);
             }
         });
-        conversor_Unid_Button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFrame frame1 = new JFrame("Conversor Unidades");
-                ConvertidorUnidades f1 = new ConvertidorUnidades();
-                frame1.setContentPane(f1.conversorPanel);
-                frame1.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-                frame1.pack();
-                frame1.setSize(600, 600);
-                frame1.setLocationRelativeTo(null);
-                frame1.setVisible(true);
-            }
-        });
+
         calculadoraDeDivisasButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
