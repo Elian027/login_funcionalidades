@@ -8,7 +8,9 @@ public class Login extends JFrame{
     private JPanel login;
     private JTextField usu;
     private JPasswordField pass;
-    private JButton ingresarButton;
+    private JRadioButton ingresarButton;
+    private JSeparator JSeparato1;
+    private JToolBar JtoolBar1;
     TextPrompt tp = new TextPrompt("Usuario",usu);
     TextPrompt tp1 = new TextPrompt("Contraseña",pass);
 

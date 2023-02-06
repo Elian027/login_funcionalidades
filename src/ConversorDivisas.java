@@ -14,6 +14,7 @@ public class ConversorDivisas {
     private JComboBox comboBox2;
     private JButton convertirButton;
     private JLabel resultado;
+    private JCheckBox checkBox1;
 
 
     public ConversorDivisas() {
